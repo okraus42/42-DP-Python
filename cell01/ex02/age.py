@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-age = 21
+age = 24
 ft = 42
 
 my_age = age + ft
