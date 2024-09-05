@@ -2,7 +2,6 @@
 import sys
 
 def find_the_redheads(people):
-	
 	return list((dict(filter(lambda person: person[1] == "red", people.items()))).keys())
 
 if len(sys.argv) > 1:

@@ -9,9 +9,6 @@ for char in sys.argv[1]:
 	if char == 'z':
 		z += 1
 if z == 0:
-	print("none", end='')
+	print("none")
 else:
-	while (z):
-		z -= 1
-		print("z", end='')
-print()
+	print("z" * z)

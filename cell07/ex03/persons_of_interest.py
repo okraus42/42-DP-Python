@@ -9,7 +9,7 @@ def famous_births(people):
 if len(sys.argv) > 1:
 	exit(2)
 
-#dictionary with value of set of touples
+#dictionary with value dictionary
 women_scientists = {
 "ada": { "name": "Ada Lovelace", "date_of_birth": "1815" },
 "cecilia": { "name": "Cecila Payne", "date_of_birth": "1900" },

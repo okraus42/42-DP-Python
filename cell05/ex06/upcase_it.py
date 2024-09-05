@@ -1,8 +1,4 @@
 #!/usr/bin/python3
 import sys
 
-if len(sys.argv) != 2:
-	print("none")
-	exit(2)
-
-print(sys.argv[1].upper())
+print(sys.argv[1].upper()) if len(sys.argv) == 2 else print("none")

@@ -13,8 +13,5 @@ except ValueError:
 	print("Invalid values", file=sys.stderr)
 	exit(2)
 
-if (num2 - num1 > 10000):
-	print("You are crazy!!!")
-else:
-	print(list(range(num1, num2 + 1)))
+print("You are crazy!!!" if (num2 - num1 > 10000 or num1 > num2) else list(range(num1, num2 + 1)))
 	

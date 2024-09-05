@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-import sys
+from sys import argv as a
 
 def average(students):
 	scores = list(students.values())
@@ -8,7 +8,7 @@ def average(students):
 	else:
 		return 0
 
-if len(sys.argv) > 1:
+if len(a) > 1:
 	exit(2)
 
 class_3B = {

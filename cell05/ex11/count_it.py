@@ -1,9 +1,5 @@
 #!/usr/bin/python3
-import sys
+from sys import argv as a
 
-if len(sys.argv) < 2:
-	print("none")
-	exit(2)
-print("parameters:", len(sys.argv) - 1)
-for str in sys.argv[1:]:
-	print(f"{str}: {len(str)}")
+print(*[f"parameters: {len(a[1:])}", *[f"{b}: {len(b)}" for b in a[1:]]] if len(a) >= 2 else ["none"], sep='\n')
+#thanks gharazka

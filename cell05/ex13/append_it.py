@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-import sys
+from sys import argv
 
-if len(sys.argv) < 2:
+if len(argv) < 2:
 	print("none")
 	exit(2)
-for str in sys.argv[1:]:
+for str in argv[1:]:
 	if not str.endswith("ism"):
 		print(f"{str}ism")

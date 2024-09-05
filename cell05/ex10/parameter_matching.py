@@ -1,12 +1,4 @@
 #!/usr/bin/python3
-import sys
-import re
+from sys import argv as a
 
-if len(sys.argv) != 2:
-	print("none")
-	exit(2)
-str = input("What was the parameter? ")
-if str == sys.argv[1]:
-	print("Good job!")
-else:
-	print("Nope, sorry...")
+print("none" if len(a) != 2 else "Good job!" if input("What was the parameter? ") == a[1] else "Nope, sorry...")
