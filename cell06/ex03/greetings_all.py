@@ -1,11 +1,6 @@
 #!/usr/bin/python3
-import sys
 
-def greetings(name = 'noble stranger'):
-	if isinstance(name, str):
-		print(f"Hello, {name}.")
-	else:
-		print("Error! It was not a name.", file=sys.stderr)
+def greetings(name = 'noble stranger'):	print(f"Hello, {name}." if isinstance(name, str) else "Error! It was not a name.")
 
 greetings('Alexandra')
 greetings('Wil')

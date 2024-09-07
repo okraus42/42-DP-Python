@@ -2,9 +2,7 @@
 import sys
 
 def famous_births(people):
-	sorted_scientists = dict(sorted(people.items(), key=lambda item: (int((item[1])['date_of_birth']))))
-	for value in sorted_scientists.values():
-		print(f"{value['name']} is a great scientist born in {value['date_of_birth']}.")
+	for value in dict(sorted(people.items(), key=lambda item: (int((item[1])['date_of_birth'])))).values(): print(f"{value['name']} is a great scientist born in {value['date_of_birth']}.")
 
 if len(sys.argv) > 1:
 	exit(2)

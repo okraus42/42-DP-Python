@@ -1,11 +1,9 @@
 #!/usr/bin/python3
 import sys
 
-def shrink(s: str):
-	print(str[:8])
+def shrink(s: str): print(s[:8])
 
-def enlarge(s: str):
-	print(str + 'z' * (8 - len(str)))
+def enlarge(s: str): print(s + 'z' * (8 - len(s)))
 
 if len(sys.argv) < 2:
 	print("none")

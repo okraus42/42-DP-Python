@@ -1,6 +1,3 @@
 #!/usr/bin/python3
-import sys
 
-str = input("Give me a word: ")
-
-print(str.upper())
+print(input("Give me a word: ").upper())

@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-def hello():
-	print("Hello, everyone!")
+def hello(): print("Hello, everyone!")
 
 hello()
